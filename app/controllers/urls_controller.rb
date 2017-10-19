@@ -4,4 +4,9 @@ class UrlsController < ApplicationController
   	@urls = Url.all
 	end
 
+	def show
+		byebug
+    @url = Url.find(params[:id])
+	end
+
 end
